@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="drummer_school" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-drummer" translatesAutoresizingMaskIntoConstraints="NO" id="VoL-QQ-Tpx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drummer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-J7-y9v">
+                                <rect key="frame" x="-38" y="20" width="450" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6bZ-oL-Hut"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garybob's School of Drums" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CY-Tk-t2Z">
+                                <rect key="frame" x="78.5" y="163" width="218.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rwk-fF-cw4">
+                                <rect key="frame" x="20" y="212" width="335" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlc-4g-ryk">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="36"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="BEGINNER">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="vI6-ax-XGh" kind="show" id="log-vr-Oje"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cV-Lb-SrO">
+                                        <rect key="frame" x="0.0" y="46" width="335" height="36"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="INTERMEDIATE">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKs-tJ-d9V">
+                                        <rect key="frame" x="0.0" y="92" width="335" height="36"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="ADVANCED">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VoL-QQ-Tpx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1MG-Zz-Tgg"/>
+                            <constraint firstItem="VoL-QQ-Tpx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Xw-8q-2cx"/>
+                            <constraint firstItem="rwk-fF-cw4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AYt-qO-syV"/>
+                            <constraint firstItem="rwk-fF-cw4" firstAttribute="top" secondItem="1CY-Tk-t2Z" secondAttribute="bottom" constant="25" id="BeM-TZ-GUu"/>
+                            <constraint firstItem="rwk-fF-cw4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CZ0-QW-OhN"/>
+                            <constraint firstItem="VoL-QQ-Tpx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IaY-Eb-scC"/>
+                            <constraint firstItem="1CY-Tk-t2Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KlA-7e-b5m"/>
+                            <constraint firstItem="VoL-QQ-Tpx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OGs-a2-o4H"/>
+                            <constraint firstItem="d9d-J7-y9v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SuA-P6-Gqd"/>
+                            <constraint firstItem="1CY-Tk-t2Z" firstAttribute="top" secondItem="d9d-J7-y9v" secondAttribute="bottom" constant="15" id="cKE-he-6oY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rwk-fF-cw4" secondAttribute="trailing" constant="20" id="hTj-2H-YBx"/>
+                            <constraint firstItem="d9d-J7-y9v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="pnI-Fr-PfW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+        <!--BeginnerVC-->
+        <scene sceneID="UsR-aV-etf">
+            <objects>
+                <viewController id="vI6-ax-XGh" customClass="BeginnerVC" customModule="drummer_school" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="saw-Zg-TPY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-drummer" translatesAutoresizingMaskIntoConstraints="NO" id="FlO-L3-qpq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drummer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="vIa-SQ-xKU">
+                                <rect key="frame" x="-38" y="40" width="450" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="fSZ-xL-piX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="tXX-xa-gZO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginner Course" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mY-4H-9TB">
+                                <rect key="frame" x="121" y="183" width="133" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Izj-yf-7ss">
+                                <rect key="frame" x="0.0" y="228" width="375" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <wkWebView contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHH-0h-URu">
+                                <rect key="frame" x="0.0" y="463" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vIa-SQ-xKU" firstAttribute="centerX" secondItem="saw-Zg-TPY" secondAttribute="centerX" id="Ikw-4j-kb5"/>
+                            <constraint firstItem="vIa-SQ-xKU" firstAttribute="top" secondItem="6Ni-8Y-WJj" secondAttribute="top" constant="20" id="JEE-lw-acI"/>
+                            <constraint firstItem="3mY-4H-9TB" firstAttribute="top" secondItem="vIa-SQ-xKU" secondAttribute="bottom" constant="15" id="cJu-Wo-Qsl"/>
+                            <constraint firstItem="FlO-L3-qpq" firstAttribute="trailing" secondItem="6Ni-8Y-WJj" secondAttribute="trailing" id="cf3-Lx-B98"/>
+                            <constraint firstItem="FlO-L3-qpq" firstAttribute="top" secondItem="saw-Zg-TPY" secondAttribute="top" id="jVh-9M-4ph"/>
+                            <constraint firstItem="3mY-4H-9TB" firstAttribute="centerX" secondItem="saw-Zg-TPY" secondAttribute="centerX" id="ogK-sf-UIS"/>
+                            <constraint firstItem="FlO-L3-qpq" firstAttribute="leading" secondItem="6Ni-8Y-WJj" secondAttribute="leading" id="ry5-Gd-hxS"/>
+                            <constraint firstItem="FlO-L3-qpq" firstAttribute="bottom" secondItem="6Ni-8Y-WJj" secondAttribute="bottom" id="wvE-eU-xAj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ni-8Y-WJj"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatView" destination="WHH-0h-URu" id="QEj-cM-ig4"/>
+                        <outlet property="webView" destination="Izj-yf-7ss" id="dMU-Qw-d3W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABL-Yp-jjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677.60000000000002" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-drummer" width="350" height="313"/>
+        <image name="drummer-logo" width="450" height="470"/>
+    </resources>
+</document>
